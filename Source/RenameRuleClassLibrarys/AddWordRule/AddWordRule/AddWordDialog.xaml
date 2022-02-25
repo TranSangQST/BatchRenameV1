@@ -1,0 +1,32 @@
+﻿<UserControl x:Class="AddWordRule.AddWordDialog"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:AddWordRule"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Canvas>
+        <TextBlock Text="Add Word" FontWeight="SemiBold" Canvas.Left="50" Canvas.Top="5" FontSize="20"/>
+        <StackPanel Canvas.Left="10" Canvas.Top="40" Orientation="Horizontal">
+            <Label Width="80" Content="Select Type: "/>
+            <ComboBox Width="125" Height="20"  Name="addWordTypeCB">
+                <ComboBoxItem>
+                    <TextBlock Text="Add Prefix"/>
+                </ComboBoxItem>
+                <ComboBoxItem>
+                    <TextBlock Text="Add_suffix"/>
+                </ComboBoxItem>
+            </ComboBox>
+        </StackPanel>
+        <StackPanel Canvas.Left="10" Canvas.Top="80" Orientation="Horizontal">
+            <Label Width="80" Content="Word: "/>
+            <TextBox Width="120" Height="20"  Name="addWordTextBox"></TextBox>
+        </StackPanel>
+        <Button Name="okButton" Width="80" Height="25" Content="OK" Click="okButton_Click"  Canvas.Left="10" Canvas.Top="160"/>
+        <Button Content="Cancel" Width="80" Height="25" IsCancel="True" Canvas.Left="120" Canvas.Top="160" />
+
+
+    </Canvas>
+</UserControl>
+

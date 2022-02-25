@@ -1,0 +1,59 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <UseWindowsForms>true</UseWindowsForms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Icons\add.png" />
+    <None Remove="Icons\clear.png" />
+    <None Remove="Icons\help.png" />
+    <None Remove="Icons\infor.png" />
+    <None Remove="Icons\instruction.png" />
+    <None Remove="Icons\load.png" />
+    <None Remove="Icons\openFile.png" />
+    <None Remove="Icons\openFolder.png" />
+    <None Remove="Icons\pause.png" />
+    <None Remove="Icons\preview.png" />
+    <None Remove="Icons\refresh.png" />
+    <None Remove="Icons\save.png" />
+    <None Remove="Icons\saveAs.png" />
+    <None Remove="Icons\start.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="PropertyChanged.Fody" Version="3.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\RenameRuleLib\RenameRuleLib.csproj" />
+    <ProjectReference Include="..\TrimRule\TrimRule.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="RenameRuleLib">
+      <HintPath>bin\Debug\net5.0-windows\RenameRuleLib.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Icons\add.png" />
+    <Resource Include="Icons\clear.png" />
+    <Resource Include="Icons\help.png" />
+    <Resource Include="Icons\infor.png" />
+    <Resource Include="Icons\instruction.png" />
+    <Resource Include="Icons\load.png" />
+    <Resource Include="Icons\openFile.png" />
+    <Resource Include="Icons\openFolder.png" />
+    <Resource Include="Icons\pause.png" />
+    <Resource Include="Icons\preview.png" />
+    <Resource Include="Icons\refresh.png" />
+    <Resource Include="Icons\save.png" />
+    <Resource Include="Icons\saveAs.png" />
+    <Resource Include="Icons\start.png" />
+  </ItemGroup>
+
+</Project>
